@@ -105,23 +105,18 @@ body {
     font-size: 14px;
   }
 
-
 .btn.active{
     transform: scale(0.98);
 }
-
 
 .btn:hover{
     background-color: gold;
 }
 
-
 .btn:focus{
     outline: 0;
 
 }
-
-
 
   .btn:disabled{
     background-color: black;
