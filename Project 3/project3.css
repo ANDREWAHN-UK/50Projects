@@ -39,6 +39,10 @@ body {
     transition-delay: 0.3s;
 }
 
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
+
 .circle-container{
     position: fixed;
     top: -100px;
@@ -53,6 +57,7 @@ body {
     position: relative;
     transition: transform 0.5s linear;
 }
+
 
 .circle button {
     position: absolute;
@@ -107,17 +112,18 @@ nav ul li {
 }
 
 nav ul li i{
-    font-size: 20px;
+    font-size: 30px;
+   padding-left: 15px;
     margin-right: 10px;
 }
 
 nav ul li + li {
-    margin-left: 15px;
+    margin-left: 30px;
     transform: translateX(-150%);
 }
 
 nav ul li + li + li{
-    margin-left: 30px;
+    margin-left: 60px;
     transform: translateX(-200%);
 }
 
