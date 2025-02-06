@@ -46,3 +46,9 @@ transform: translateX(0);
 .box h2{
 font-size: 48px;
 }
+
+.container-1{
+height: 250px;
+width: 100vw;
+
+}
