@@ -22,18 +22,19 @@ body {
     top: 0px;
 }
 
-.container {
+.container2 {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px 40px;
     border-radius: 5px;
+   
 }
 
-.container h1 {
+.container2 h1 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.container a {
+.container2 a {
     text-decoration: none;
     color: lightblue;
 }
@@ -104,4 +105,19 @@ p {
 position: absolute;
 top: 15px;
 left: 0;
+color: pink;
+}
+
+.form-control label span{
+display: inline-block;
+font-size: 18px;
+min-width: 5px;
+transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:focus + label span{
+color: lightblue;
+border-bottom-color: lightblue;
+transform: translateY(-30px);
 }
