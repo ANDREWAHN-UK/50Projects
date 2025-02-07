@@ -99,3 +99,9 @@ a {
 p {
     margin-top: 30px
 }
+
+.form-control label{
+position: absolute;
+top: 15px;
+left: 0;
+}
