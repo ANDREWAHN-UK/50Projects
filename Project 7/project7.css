@@ -12,7 +12,7 @@
     --right-btn-hover-colour: rgba(28, 122, 28, 1);
     --hover-width: 75%;
     --other-width: 25%;
-
+    --speed: 1000ms
 }
 
 body {
@@ -90,12 +90,15 @@ h1 {
 
 p {
     font-size: 4rem;
-    color: white;
+    color: white ;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%);
     white-space: normal;
+    border: white solid 0.2rem;
+    padding: 1.5rem;
+    background-color: rgba(180, 155, 155, 0.082);
 }
 
 .btn {
@@ -116,6 +119,9 @@ p {
     font-weight: bold;
 }
 
+a{
+color: rgb(219, 189, 14);}
+
 
 .split.left .btn:hover {
     background-color: var(--left-btn-hover-colour);
@@ -127,19 +133,25 @@ p {
     border-color: var(--right-btn-hover-colour);
 }
 
-.hover-left .left{
+.hover-left .left {
     width: var(--hover-width);
 }
 
-.hover-left .right{
+.hover-left .right {
     width: var(--other-width);
 }
 
-.hover-right .right{
+.hover-right .right {
     width: var(--hover-width);
 }
 
-.hover-right.left{
+.hover-right.left {
     width: var(--other-width);
 }
 
+.split.left,
+.split.left::before,
+.split.right,
+.split.right::before {
+    transition: all var(--speed) ease-in-out;
+}
