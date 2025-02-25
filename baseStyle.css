@@ -17,10 +17,6 @@ body {
 
 }
 
-.navbar {
-    background-color: rgba(255, 255, 255, 0);
-}
-
 .card-img-top {
     height: 150px;
 }
@@ -28,7 +24,9 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    left:25%;
+    width: 50%; 
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .intro-text {

@@ -16,6 +16,10 @@ body {
     overflow: hidden;
 }
 
+.navbar{
+background-color: rgb(161,100,123) !important;
+}
+
 .btn{
     background-color: rebeccapurple;
     border-radius: 5px;
