@@ -50,25 +50,22 @@ nav ul {
     margin: 0;
     width: 0;
     transition: width 0.6 linear;
-    /* transform: rotateY('0deg');*/
-} 
+}
 
 nav.active ul {
     width: 100%;
-    /* transform: rotateY('360deg'); */
 }
 
 nav ul li {
     transform: rotateY('0deg');
     opacity: 0;
     transition: transform 0.6s linear, opacity 0.6s linear;
-    
-   
 }
 
 nav.active ul li {
     opacity: 1;
-    transform: rotateY('360deg'); background-color: none;
+    transform: rotateY('360deg');
+    background-color: none;
     border: none;
 }
 
@@ -128,11 +125,11 @@ nav.active .icon .line3 {
 
 nav ul.dropdown-menu {
     padding-top: 20px;
-background-color: rgb(238, 208, 213);
-/* border: none; */
-width:200% !important}
+    background-color: rgb(238, 208, 213);
+    width: 200% !important
+}
 
-nav ul.dropdown-menu .dropdown-item{
-background-color: transparent;
-text-decoration: none;
-}  
+nav ul.dropdown-menu .dropdown-item {
+    background-color: transparent;
+    text-decoration: none;
+}
