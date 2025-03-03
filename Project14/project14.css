@@ -25,6 +25,8 @@ body {
     font-size: 20px;
 }
 
+
+
 nav {
     background-color: beige;
     padding: 20px;
@@ -40,7 +42,6 @@ nav {
 
 nav.active {
     width: 52vw;
-
 }
 
 nav ul {
@@ -77,6 +78,16 @@ nav ul a {
     background-color: pink;
 }
 
+
+@media(max-width: 580px) {
+    .intro {
+        left:5%;
+        font-size: 15px;
+    }
+
+    nav{
+    width: 300px;}
+}
 .icon {
     background-color: beige;
     border: 0;
