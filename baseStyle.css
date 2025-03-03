@@ -29,13 +29,19 @@ body {
     background-color: rgba(255, 255, 255, 0);
 }
 
+@media(max-width: 580px){
+    .navbar{
+        left:0%;
+        width: 100%;
+}
+}
+
 .intro-text {
     width: 75vw;
     margin: auto;
 }
 
 .intro-space{
-
 position:static;
 top: 100px;
 height: 500px;
