@@ -2,10 +2,11 @@
 
 
 :root {
---border-color: #144fc6;
+    --border-color: #144fc6;
 
 
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #3494e4;
@@ -14,7 +15,8 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    overflow:scroll;
+    overflow: scroll;
+    flex-direction: column;
 }
 
 h1 {
@@ -26,27 +28,42 @@ h3 {
     margin: 10px 0;
 }
 
-.cup{
-background-color: white;
-border: 4px solid var(--border-color);
-color: var(--border-color);
-border-radius: 0 0 40px 40px;
-height: 330px;
-width: 150px;
-margin: 30px 0;
-display: flex;
-flex-direction: column;
-overflow: hidden;
+.cup {
+    background-color: white;
+    border: 4px solid var(--border-color);
+    color: var(--border-color);
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  
 }
 
-.cup.cup-small{
-width: 50px;
-height: 95px;
-border-radius: 0 0 15px 15px;
-background-color: rgba(255, 255, 255, 0.9);
-cursor: pointer;
-font-size: 14px;
+.cup.cup-small {
+    width: 50px;
+    height: 95px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.cup-container{
+display: flex;
 align-items: center;
 justify-content: center;
-text-align: center;
-}
+flex-direction: column;}
