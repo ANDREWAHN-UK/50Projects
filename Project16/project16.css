@@ -4,8 +4,6 @@
 :root {
     --border-color: #144fc6;
     --fill-color: #6ab3f8;
-
-
 }
 
 body {
@@ -80,9 +78,9 @@ h3 {
 .remained{
 display: flex;
 align-items: center;
-justify-content: center;
+/* justify-content: center; */
 text-align: center;
-flex-direction: column;
+flex-direction: column-reverse;
 flex: 1;
 transition: 0.3s ease;
 }
@@ -99,17 +97,22 @@ font-size: 12px;
 background-color: var(--fill-color);
 font-size: 30px;
 display: flex;
-align-items: center;
+/* align-items: center; */
 justify-content: center;
-font-weight: bold;
+/* font-weight: bold; */
 height: 0;
 transition: 0.3 ease;
+width: 100%;
+
 }
 
 .text{
 text-align: center;
 margin: 0 0 5px;
 }
+
+#litres{
+font-size: 12px;}
 
 @media(max-width: 560px) {
    
