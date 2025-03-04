@@ -75,47 +75,53 @@ h3 {
     color: white;
 }
 
-.remained{
-display: flex;
-align-items: center;
-/* justify-content: center; */
-text-align: center;
-flex-direction: column-reverse;
-flex: 1;
-transition: 0.3s ease;
+.remained {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    flex-direction: column-reverse;
+    flex: 1;
+    transition: 0.3s ease;
 }
 
-.remained span{
-font-size: 20px;
-font-weight: bold;}
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
 
-.remained small{
-font-size: 12px;
+.remained small {
+    font-size: 12px;
 }
 
 .percentage {
-background-color: var(--fill-color);
-font-size: 30px;
-display: flex;
-/* align-items: center; */
-justify-content: center;
-/* font-weight: bold; */
-height: 0;
-transition: 0.3 ease;
-width: 100%;
+    background-color: var(--fill-color);
+    font-size: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* font-weight: bold; */
+    height: 0;
+    transition: 0.3 ease;
+    width: 100%;
 
 }
 
-.text{
-text-align: center;
-margin: 0 0 5px;
+.text {
+    text-align: center;
+    margin: 0 0 5px;
 }
 
-#litres{
-font-size: 12px;}
+#litres {
+    font-size: 12px;
+}
+
+.intro-space {
+    height: 0px
+}
 
 @media(max-width: 560px) {
-   
+
     .intro-space {
         height: 245px;
         width: 250px;
