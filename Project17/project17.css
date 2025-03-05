@@ -22,7 +22,14 @@ header {
 }
 
 .intro-para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: pink;
+    padding-top: 10px;
+    margin: 20px 10px;
+
 }
 
 .search {
