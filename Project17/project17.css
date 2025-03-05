@@ -21,8 +21,9 @@ header {
     background-color: var(--secondary-colour);
 }
 
-.intro-para{
-color: pink;}
+.intro-para {
+    color: pink;
+}
 
 .search {
     background-color: transparent;
@@ -96,18 +97,18 @@ main {
 }
 
 .overview {
-background-color: white;
-padding: 2rem;
-position: absolute;
-left: 0;
-right: 0;
-bottom: 0;
-transform: translateY(101%);
-max-height: 100%;
-transition: transform 0.3s ease-in;
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(101%);
+    max-height: 100%;
+    transition: transform 0.3s ease-in;
 }
 
-.movie:hover .overview{
+.movie:hover .overview {
     transform: translateY(0%);
 }
 
@@ -115,11 +116,15 @@ transition: transform 0.3s ease-in;
 @media(max-width: 560px) {
 
     .intro-space {
-        height: 245px;
-        width: 250px;
+        display: none;
+    }
+
+    .intro-para {
+        padding-top: 10px;
+        margin: 0 10px;
     }
 
     header {
-        padding-top: 800px;
+        justify-content: center;
     }
 }
