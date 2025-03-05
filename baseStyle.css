@@ -63,7 +63,11 @@ body {
     }
 
     .intro-space {
-        height: 545px;
-        width: 200px;
+        height: 1000px;
+        width: 100px;
+    }
+
+    .card img{
+        display: none;
     }
 }
