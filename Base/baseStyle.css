@@ -14,7 +14,6 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: scroll;
-
 }
 
 .card-img-top {
@@ -28,10 +27,6 @@ body {
     width: 60%;
     background-color: rgba(255, 255, 255, 0);
 }
-
-
-
-
 
 .intro-text {
     width: 75vw;
@@ -67,7 +62,7 @@ body {
         width: 100px;
     }
 
-    .card img{
+    .card img {
         display: none;
     }
 }
