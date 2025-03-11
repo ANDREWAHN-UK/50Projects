@@ -1,130 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 :root {
-    --primary-colour: black;
-    --secondary-colour: white;
-}
-
-html.dark {
-    --primary-colour: white;
-    --secondary-colour: #333;
-}
-
-html.dark {
-    background-color: #111;
-    color: var(--primary-colour);
+  --primary-color: #000;
+  --secondary-color: #fff;
 }
 
 html {
-    transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  --primary-color: #fff ;
+  --secondary-color: #333;
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
 }
 
 body {
-    font-family: 'Heebo', sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: scroll;
+  font-family: 'Heebo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0; 
 }
 
 .toggle {
-    background-color: var(--primary-colour);
-    color: var(--secondary-colour);
-    border: 0;
-    border-radius: 4px;
-    padding: 8px 12px;
-    top: 100px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 300px;
+ 
 }
 
 .toggle:focus {
-    outline: none;
+  outline: none;
 }
 
 .clock-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .clock {
-    position: relative;
-    width: 200px;
-    height: 200px;
+  position: relative;
+  width: 200px;
+  height: 200px;
 }
 
 .needle {
-    background-color: var(--primary-colour);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 65px;
-    width: 3px;
-    transform-origin: bottom center;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in linear;
 }
 
-
 .needle.hour {
-    transform: translate(-50%, -100%) rotate(0deg);
+  transform: translate(-50%, -100%) rotate(0deg);
 }
 
 .needle.minute {
-    transform: translate(-50%, -100%) rotate(0deg);
-    height: 100px;
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
 }
 
 .needle.second {
-    transform: translate(-50%, -100%) rotate(0deg);
-    height: 100px;
-    background-color: #e74c3c;
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 80px;
+  background-color: #e74c3c;
 }
 
-.centre-point {
-    background-color: #e74c3c;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+.center-point {
+  background-color: #e74c3c;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
-.centre-point::after {
-    content: '';
-    background-color: var(--primary-colour);
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+.center-point::after {
+  content: '';
+  background-color: var(--primary-color);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .time {
-    font-size: 60px;
+  font-size: 60px;
 }
 
-.date{
-color: #aaa;
-font-size: 14px;
-letter-spacing: 0.3px;
-text-transform: uppercase;
+.date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 
-.date .circle{
-    background-color: var(--primary-colour);
-    color: var(--secondary-colour);
-    border-radius: 50%;
-    height: 18px;
-    width: 18px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 18px;
-    transition: all 0.5s ease-in;
-    font-size: 10px;
+.date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
 }
+
+/* The below because Bootstrap was clashing and stoppiung the dark class background being applied, so I removed bootstrap and created an alternative navigation bar */
+
+#myNavbar{
+    position: fixed;
+    width: 70%;
+    background: var(--primary-color);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #E8E8E8;
+    text-decoration: none;
+    top: 0px;
+}
+
+ul{
+    list-style: none;
+}
+    
+.medium{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.right-nav{
+    padding: 8px 15px;
+    float: left;
+}
+
+
+div.container{
+    font-family: Raleway;
+    margin: 0 auto;
+    padding: 6px 3em;
+    text-align: center;
+}
+
+div.container a
+{
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0px 20px;
+    padding: 5px 5px;
+    position: relative;
+}
+.navlogo{
+height: 50px;
+width: 50px}
