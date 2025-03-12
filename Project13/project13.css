@@ -13,7 +13,7 @@ h3 {
 }
 
 .container {
-    width: 500px;
+    width: 70vw;
 }
 
 textarea {
@@ -58,6 +58,11 @@ p {
 h1 {
     color: beige;
 }
+
+.intro-space {
+    height: 100px;
+}
+
 
 @media(max-width: 560px) {
     .navbar {

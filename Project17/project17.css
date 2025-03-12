@@ -27,7 +27,7 @@ header {
     align-items: center;
     flex-direction: column;
     color: pink;
-    padding-top: 10px;
+    padding-top: 0px;
     margin: 20px 10px;
 
 }
@@ -119,11 +119,15 @@ main {
     transform: translateY(0%);
 }
 
+.intro-space {
+    display: none;
+}
 
 @media(max-width: 560px) {
 
     .intro-space {
-        display: none;
+       display: block;
+       height: 400px;
     }
 
     .intro-para {

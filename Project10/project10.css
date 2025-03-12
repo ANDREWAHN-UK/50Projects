@@ -57,7 +57,3 @@ h3{
 .btn:active{
     transform: scale(0.98);
 }
-
-.navbar{
-    width: 50%;
-    }
